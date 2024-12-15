@@ -1,5 +1,5 @@
 name: Run name
-run-name: Run by @${{ github.actor }} # ワークフロー実行名の指定
+run-name: Run by @${{ github.actor }} # ワークフロー実行名の指定(デフォルトはコミットメッセージ)
 on: push
 jobs:
   print:
