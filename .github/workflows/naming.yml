@@ -2,8 +2,8 @@ name: Naming
 on: push
 jobs:
   print:
-    name: Super Useful job
+    name: Super Useful job # ジョブ名の指定
     runs-on: ubuntu-latest
     steps:
-    - name: Amazing Script
+    - name: Amazing Script # ステップ名の指定
       run: echo "Hello"
