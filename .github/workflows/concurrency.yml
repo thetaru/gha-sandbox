@@ -5,4 +5,4 @@ jobs:
   sleep:
     runs-on: ubuntu-latest
     steps:
-    - run: sleep 5
+    - run: sleep 120
