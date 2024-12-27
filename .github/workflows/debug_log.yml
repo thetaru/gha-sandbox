@@ -4,10 +4,4 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-    - run: gh variable set ACTIONS_STEP_DEBUG --body true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: echo "::debug::This is a debug log"
-    - run: gh variable delete ACTIONS_STEP_DEBUG
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
