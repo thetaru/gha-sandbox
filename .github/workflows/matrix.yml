@@ -5,7 +5,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-      runs-on: ${{ matrix.os }}
-      steps:
-      - run: echo "${RUNNER_OS}"
-        shell: bash
+    runs-on: ${{ matrix.os }}
+    steps:
+    - run: echo "${RUNNER_OS}"
+      shell: bash
