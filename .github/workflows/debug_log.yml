@@ -4,6 +4,6 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-    - run: gh variable set ACTIONS_STEP_DEBUG true
+    - run: gh variable set ACTIONS_STEP_DEBUG --body true
     - run: echo "::debug::This is a debug log"
     - run: gh variable delete ACTIONS_STEP_DEBUG
